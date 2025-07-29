@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tile Calculator</title>
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Tile Calculator</h1>
+  <h1>Tile Calculator</h1>
 
-    <label for="mode">Mode:</label>
-    <select id="mode">
-      <option value="toSqFt">Tonnage ➝ Square Footage</option>
-      <option value="toTons">Square Footage ➝ Tonnage</option>
-    </select>
+  <label for="tileSize">Select Tile Size:</label>
+  <select id="tileSize">
+    <option value="12x12">12x12</option>
+    <option value="12x12r">12x12 Rectified</option>
+    <option value="12x24">12x24</option>
+    <option value="12x24r">12x24 Rectified</option>
+    <option value="18x18">18x18</option>
+    <option value="24x24">24x24 (Both)</option>
+    <option value="15x30">15x30 (Both)</option>
+  </select>
 
-    <input type="number" id="length" placeholder="Tile Length (in)">
-    <input type="number" id="width" placeholder="Tile Width (in)">
-    <input type="number" id="inputValue" placeholder="Tonnage or Sq Ft">
+  <br><br>
 
-    <button onclick="calculate()">Calculate</button>
+  <label for="tonnage">Enter Tonnage:</label>
+  <input type="number" id="tonnage" placeholder="e.g. 5">
 
-    <div id="result"></div>
-  </div>
+  <br><br>
+
+  <button onclick="calculate()">Calculate</button>
+
+  <div id="results"></div>
+
   <script src="script.js"></script>
 </body>
 </html>
