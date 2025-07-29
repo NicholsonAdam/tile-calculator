@@ -5,7 +5,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-image: url('https://your-tile-background.jpg'); /* Replace with actual tile texture */
+      background-image: url('tile-bg.jpg'); /* Replace with actual image filename */
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -61,7 +61,7 @@
 </head>
 <body>
   <div class="logo">
-    <img src="https://your-daltile-logo.png" alt="Dal-Tile Logo"> <!-- Replace with actual logo path -->
+    <img src="daltile-logo.png" alt="Dal-Tile Logo"> <!-- Replace with actual logo filename -->
   </div>
 
   <h1>Tile Calculator</h1>
@@ -97,13 +97,13 @@
       let result = "";
 
       const conversionRates = {
-        "12x12": 150,
-        "12x12r": 160,
-        "12x24": 180,
-        "12x24r": 190,
-        "18x18": 200,
-        "24x24": 220,
-        "15x30": 240
+        "12x12": 638,
+        "12x12r": 525,
+        "12x24": 602,
+        "12x24r": 481,
+        "18x18": 630,
+        "24x24": 473,
+        "15x30": 497
       };
 
       const rate = conversionRates[tileSize];
