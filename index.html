@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tile Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tile Calculator</h1>
+
+    <label for="mode">Mode:</label>
+    <select id="mode">
+      <option value="toSqFt">Tonnage ➝ Square Footage</option>
+      <option value="toTons">Square Footage ➝ Tonnage</option>
+    </select>
+
+    <input type="number" id="length" placeholder="Tile Length (in)">
+    <input type="number" id="width" placeholder="Tile Width (in)">
+    <input type="number" id="inputValue" placeholder="Tonnage or Sq Ft">
+
+    <button onclick="calculate()">Calculate</button>
+
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
